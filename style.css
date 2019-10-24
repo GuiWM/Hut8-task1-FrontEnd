@@ -1,0 +1,162 @@
+body {
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* HEADER */
+header {
+    background-color: black;
+}
+
+header .hcontent {
+    width: 100%;
+    max-width: 1170px;
+    min-height: 160px;
+    margin: 0 auto;
+}   
+
+header .hcontent img {
+    position: relative;
+    width: 250px;
+    height: 125px;
+    margin-left: -10px;
+    top: 15px;
+}
+header .hcontent .hmenu {
+    position: relative;
+    top: 60px;
+    float: right;
+    text-align: center;
+    margin-right: 10px;
+
+    /**/
+    display: flex;
+    flex-direction: row;
+}
+
+header .hcontent .hmenu span{
+ 
+    color: white;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+
+/* IMAGEM GRANDE*/
+
+.capa {
+    background-image: url("./images/imggrande.jpg");
+    margin-bottom: 100px;
+    width: 100%;
+    height: 600px;
+}
+
+.capa .capacontent {
+    position: relative;
+    padding-top: 350px;
+    color: white;
+    margin: 0 auto;
+    margin-left: 100px;;
+}
+
+/* IMAGENS E CONTEUDOS */
+.squares div img{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+    height: 800px;
+    max-width: 1180px;
+
+    /**/
+
+    display: flex;
+    flex-direction: row;
+}
+
+.squares {
+    width: 60%;
+    margin: 0 auto;
+    float: left;
+}
+.squares .car {
+    color:rgb(167, 0, 0);
+}
+
+.squares div {
+    margin-left: 20px;
+    width: 300px;
+    height: 350px;
+    float: left;
+    text-align: center;
+
+}
+
+/*CONTAINER*/
+
+.container {
+    color: rgb(48, 48, 48);
+    width: 40%;
+    float: right;
+    padding-top: 30px;
+}
+.container .title {
+    height: 60px;
+    border: 1px solid rgb(48, 48, 48);
+    text-align: center;
+    width: 400px;
+}
+
+/* CATEGORIAS */
+
+.container .categories {
+    /*width: 40%;*/
+    float: left;
+}
+
+.container .categories p {
+    padding-top: 10px;
+    border-top: 1px solid rgb(94, 94, 94);
+}
+
+
+.container .categories p .number {
+    float: right;
+}
+
+/* TAGS */
+
+.container .tags {
+    /*width: 40%;*/
+    float: left;
+}
+
+.container .tags .list {
+    padding-top: 5px;
+}
+.container .tags p { 
+    font-weight: normal;
+    padding-bottom: 5px;
+    padding: 5px;
+    float: left;
+}
+
+
+@media (max-width: 600px) {
+   
+    header .hcontent .hmenu {
+        /**/
+        display: flex;
+        flex-direction: column;
+    }
+    .content {
+    
+        display: flex;
+        flex-direction: column;
+    }
+}
